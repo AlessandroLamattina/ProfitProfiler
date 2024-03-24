@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#form-campi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin: 10px;
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.container {
+    display: flex;
+}
+
+.colonna-sinistra,
+.colonna-destra {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Modifica questo se vuoi una larghezza diversa */
+.colonna-sinistra {
+    background-color: #f0f0f0;
+}
+
+.colonna-destra {
+    background-color: #fafafa;
+}
+#btn-calcola {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,76 +1,85 @@
-<html>
-<head>
-    <title>My Web Page</title>
-</head>
-<body>
-    <h1>Live Axept Cani/Cavalli TOT</h1>
-    <p>DATA: 27 1Here is a simple HTML template with the given context:
-
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Axept Cani/Cavalli TOT</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Gestione variabili campi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Live Axept Cani/Cavalli TOT</h1>
-    <table>
-        <tr>
-            <th>Live</th>
-            <th>Axept</th>
-            <th>Cani/Cavalli</th>
-            <th>TOT</th>
-        </tr>
-        <tr>
-            <td>DATA 27 13 124</td>
-            <td>Giocate Calcio</td>
-            <td>Virutale</td>
-            <td>Live Axept Cani/Cavalli TOT</td>
-        </tr>
-    </table>
-    <h2>Schedine Pagate</h2>
-    <table>
-        <tr>
-            <th>Schedine Pagate</th>
-            <th>Debiti</th>
-            <th>TOT</th>
-        </tr>
-        <tr>
-            <td>Banconote</td>
-            <td>Monete</td>
-            <td>TOT</td>
-        </tr>
-    </table>
-    <h2>Fondo Cassa</h2>
-    <table>
-        <tr>
-            <th>Fondo Cassa</th>
-            <th>Schedine Pagate</th>
-            <th>Debiti</th>
-            <th>TOT</th>
-        </tr>
-        <tr>
-            <td>Fondo Cassa</td>
-            <td>Schedine Pagate</td>
-            <td>Debiti</td>
-            <td>TOT</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="colonna-sinistra">
+            <h1>Dati Giocato</h1>
+            <form id="form-campi">
+                <div class="campo">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div class="campo">
+                    <label for="pre-match">Pre-match:</label>
+                    <input type="number" id="pre-match" name="pre-match">
+                </div>
+                <div class="campo">
+                    <label for="Live">Live:</label>
+                    <input type="number" id="Live" name="Live">
+                </div>
+                <div class="campo">
+                    <label for="V-Keno">V-Keno:</label>
+                    <input type="number" id="V-Keno" name="V-Keno">
+                </div>
+                <div class="campo">
+                    <label for="virtual-magellan">Virtual Magellan:</label>
+                    <input type="number" id="virtual-magellan" name="virtual-magellan">
+                </div>
+                <div class="campo">
+                    <label for="virtual-inspired">Virtual Inspired:</label>
+                    <input type="number" id="virtual-inspired" name="virtual-inspired">
+                </div>
+                <div class="campo">
+                    <label for="external">External:</label>
+                    <input type="number" id="external" name="external">
+                </div>
+                <div class="campo">
+                    <label for="apache">Apache:</label>
+                    <input type="number" id="apache" name="apache">
+                </div>
+                <div class="campo">
+                    <label for="leonardo">Leonardo:</label>
+                    <input type="number" id="leonardo" name="leonardo">
+                </div>
+                <div class="campo">
+                    <label for="totale_giocate">Totale:</label>
+                    <input type="number" id="totale_giocate" name="totale_giocate">
+                </div>
+            </div>
+        <div class="colonna-destra">
+            <h1>Dati Cassa</h1>
+            <form id="form-campi">
+                <div class="campo">
+                    <label for="banconote">Banconote:</label>
+                    <input type="number" id="banconote" name="banconote">
+                </div>
+                <div class="campo">
+                    <label for="monete">Monete:</label>
+                    <input type="number" id="monete" name="monete">
+                </div>
+                <div class="campo">
+                    <label for="fondo-cassa">Fondo cassa:</label>
+                    <input type="number" id="fondo-cassa" name="fondo-cassa">
+                </div>
+                <div class="campo">
+                    <label for="debiti">Debiti:</label>
+                    <input type="number" id="debiti" name="debiti">
+                </div>
+                <div class="campo">
+                    <label for="totale">Totale:</label>
+                    <input type="number" id="totale" name="totale" disabled>
+                </div>
+                <button type="button" id="btn-calcola">Calcola</button>
+            </div>
+    </div>
+    
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
