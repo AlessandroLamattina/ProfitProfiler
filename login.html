@@ -3,6 +3,7 @@
 <head>
     <title>Login Page</title>
     <style>
+        
         /* Add your custom CSS styles here */
         .login-container {
             display: flex;
@@ -12,7 +13,6 @@
             height: 100vh;
             background-color: #f2f2f2;
         }
-
         h1 {
             color: #333;
             font-size: 24px;
@@ -25,6 +25,8 @@
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 auto; /* Add this line */
+            margin-top: 20vh; /* Add this line */
         }
 
         label {
@@ -58,16 +60,18 @@
     </style>
 </head>
 <body>
-    <h1>Login</h1>
-    
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <div class="login-container"> <!-- Wrap the form in a container -->
+        <h1>Login</h1>
         
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-        <input type="submit" value="Login">
-    </form>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>
