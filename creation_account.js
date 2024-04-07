@@ -23,6 +23,3 @@ function creaAccount(nome, email, password) {
 
     console.log('Account creato con successo!');
 }
-
-// Esempio di utilizzo della funzione
-creaAccount('Mario Rossi', 'mario@example.com', 'password123');
